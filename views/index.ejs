@@ -2,11 +2,22 @@
 <html>
   <head>
     <title><%= title %></title>
+    <meta name="robots" content="noindex">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <style>
+      header {text-align: center;}
+    </style>
+    <header>
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+    </header>
+
+    <div id="quiz">
+      <h2 style="color: #333">Physics Quiz</h2>
+    </div>
+    <script src="javascripts/phys.js"></script>
     <script src="javascripts/main.js"></script>
   </body>
 </html>

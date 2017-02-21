@@ -8,11 +8,13 @@ var momentumAnswer = phys.mechanics.momentum(mass,velocity);
 var correct = document.createElement("p");
 var correctText = document.createTextNode("Correct");
 correct.id = "success";
+correct.style = "color: green;"
 correct.appendChild(correctText);
 
 var wrong = document.createElement("p");
 var wrongText = document.createTextNode("Wrong");
 wrong.id = "wrong";
+wrong.style = "color: red;"
 wrong.appendChild(wrongText);
 
 // Quiz question object
